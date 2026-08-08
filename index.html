@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Free QR Code Generator | Create Custom QR Codes Online</title>
+
+<meta name="description" content="Create custom QR codes online with colors, logo, URL, text, email, phone, WhatsApp and WiFi support.">
+
+<meta name="keywords" content="QR Code Generator, Custom QR Code, Free QR Maker">
+
+<meta name="author" content="Ahmad Studio">
+
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="main-wrapper">
+
+
+<div class="container">
+
+
+<div class="header">
+
+<h1>QR Code Generator</h1>
+
+<p>Create Professional QR Codes Free</p>
+
+</div>
+
+
+
+<button id="darkMode" class="dark-btn">
+🌙 Dark Mode
+</button>
+
+
+
+
+<h2>Select QR Type</h2>
+
+
+<div class="qr-buttons">
+
+
+<button class="type-btn" data-type="url">
+🔗 URL
+</button>
+
+
+<button class="type-btn" data-type="text">
+📝 Text
+</button>
+
+
+<button class="type-btn" data-type="email">
+📧 Email
+</button>
+
+
+<button class="type-btn" data-type="phone">
+📞 Phone
+</button>
+
+
+<button class="type-btn" data-type="whatsapp">
+💬 WhatsApp
+</button>
+
+
+<button class="type-btn" data-type="wifi">
+📶 WiFi
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="form-box">
+
+
+<label>
+Enter Data
+</label>
+
+
+<input 
+id="qrText"
+type="text"
+placeholder="Enter text or URL">
+
+
+
+
+
+<label>
+Upload Logo
+</label>
+
+
+<input 
+type="file"
+id="logo"
+accept="image/*">
+
+
+
+
+
+
+<h3>
+QR Customization
+</h3>
+
+
+
+<label>
+QR Color
+</label>
+
+
+<input 
+type="color"
+id="qrColor"
+value="#000000">
+
+
+
+
+
+<label>
+Background Color
+</label>
+
+
+<input 
+type="color"
+id="bgColor"
+value="#ffffff">
+
+
+
+
+
+
+<label>
+QR Size
+</label>
+
+
+<input 
+type="range"
+id="qrSize"
+min="150"
+max="500"
+value="300">
+
+
+
+
+
+<label>
+QR Style
+</label>
+
+
+<select id="qrStyle">
+
+<option value="rounded">
+Rounded
+</option>
+
+<option value="square">
+Square
+</option>
+
+<option value="dots">
+Dots
+</option>
+
+</select>
+
+
+
+
+
+<div class="action-buttons">
+
+
+<button id="generate">
+Generate QR Code
+</button>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- QR Preview Area (Next Step) -->
+
+<div class="preview-box">
+
+<h3>QR Preview</h3>
+
+<div id="qr-result"></div>
+
+
+<button id="download">
+⬇ Download QR
+</button>
+
+
+</div>
+
+
+
+
+<!-- Scanner Area (Future Feature) -->
+
+<!-- Scanner Area -->
+
+<div id="scanner-area">
+
+<h2>📷 QR Scanner</h2>
+
+<button id="startScanner">Start Scanner</button>
+
+<button id="stopScanner">Stop Scanner</button>
+
+<button id="switchCamera">🔄 Switch Camera</button>
+
+<div id="reader"></div>
+
+<input type="file" id="qrImage" accept="image/*">
+
+<button id="scanImage">
+Scan Image
+</button>
+
+<input
+id="scanResult"
+type="text"
+placeholder="Scan Result"
+readonly>
+<br><br>
+<button id="copyResult">Copy</button>
+<button id="clearResult">Clear</button>
+<h3>📜 Scan History</h3>
+
+<ul id="scanHistory"></ul>
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/qr-code-styling/lib/qr-code-styling.js"></script>
+
+<script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
